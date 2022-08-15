@@ -3,6 +3,7 @@
     --secondary-color:#142748;
     --tertiary-color:#525b82;
     --quartiary-color:#333;
+    --login-color: #eee;
 }
 
 * {
@@ -39,6 +40,8 @@ body {
 .containerCss {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    padding: 40px;
     justify-content: center;
     align-items: center;
     height: 80vh;
@@ -46,11 +49,23 @@ body {
     color: #fff;
 }
 
-.childCss{
-    width: 50%;
-    height: 200px;
+.childCssOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 450px;
     background-color: var(--tertiary-color);
-    border: 1px solid black;
+    border-radius: 20px;
+}
+.childCssTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 450px;
+    background-color: var(--login-color);
+    border-radius: 20px;
 }
 /* //CENTER */
 /* FOOTER */
@@ -60,13 +75,5 @@ body {
     color: #fff;
     height: 60px;
     width: 100%;
-}
-
-.footerCssText{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
 }
 /* //FOOTER */
