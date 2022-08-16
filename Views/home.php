@@ -5,7 +5,18 @@
 	include('../includes/mn_pri.php');
 ?>
 	
-	<div class="div"><a href="">Plataforma/Home</a></div>
+	<div class="name">
+		<style type="text/css">
+			.name{
+				display: block;
+				width: calc(100% - 80px);
+				margin: 30px  40px;
+			}
+		</style>
+
+		<a href="">Plataforma / Home</a>
+
+	</div>
 
 
 	<!-- CENTER -->
@@ -18,17 +29,19 @@
 			}
 			.notifications, .news{
 				display: flex;
-				width: calc(50% - 15px);
-				height: 100px;
+				width: calc(50% - 45px);
+				height: calc(100vh - 225px);
 				background-color: #000;
 			}
 			.news{
-				margin-left: 10px;
+				width: calc(65% - 45px);
+				margin-left: 40px;
 				margin-right: 5px;
 			} 
 			.notifications{
+				width: calc(35% - 45px);
 				margin-left: 5px;
-				margin-right: 10px;
+				margin-right: 40px;
 			}
 		</style>
 
