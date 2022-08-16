@@ -76,7 +76,7 @@
         margin-left: 51.5px;
         background-color: #142748;
         border-radius: 5px;
-        animation: go-back 2.5s infinite alternate;
+        animation: go-back 1.5s infinite alternate;
     }
 
     @keyframes go-back {
