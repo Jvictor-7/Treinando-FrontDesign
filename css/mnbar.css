@@ -44,6 +44,9 @@
         background-color: rgba(0, 0, 0, 0.075);
     }
 
+    #search_bar button img{
+        width: 20px;
+    }
 
 #it_options{
     display: inline-block;
@@ -74,20 +77,10 @@
         width: 15px;
         height: 5px;
         margin-top: 5px;
-        margin-left: 51.5px;
+        margin-left: 55px;
         background-color: #142748;
         border-radius: 5px;
-        animation: go-back 1.5s infinite alternate;
     }
-
-    @keyframes go-back {
-        from {
-          transform: translateX(400px);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
 
 #it_perfil{
     display: flex;
