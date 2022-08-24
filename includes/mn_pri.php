@@ -16,7 +16,7 @@
     <div id="it_perfil">
         <h2>Bem vindo, Pikachu</h2>
         <a href="perfil.php">
-            <img src="https://yt3.ggpht.com/ytc/AKedOLTC0WZ_NhOU0cGxMrIlEug-0nbCbOQBgUA1-TCb=s900-c-k-c0x00ffffff-no-rj">
+            <img src="https://sm.ign.com/ign_br/screenshot/default/025pikachu-os-anime-4_3pym.png">
         </a>
         <button><img src="../img/icn_msg.png"></button>
     </div>
