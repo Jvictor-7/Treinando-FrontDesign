@@ -15,7 +15,7 @@
     </div>
     <div id="it_perfil">
         <h2>Bem vindo, usuario</h2>
-        <img src="">
+        <img src="https://th.bing.com/th/id/R.cb5d8602f06e9de8d161050f238c32a2?rik=ZW4aMUxzXnKF9A&pid=ImgRaw&r=0">
         <button><img src="../img/icn_msg.png"></button>
     </div>
 </div>
