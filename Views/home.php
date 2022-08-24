@@ -36,7 +36,6 @@
 			.notifications, .news{
 				display: block;
 				height: calc(100vh - 225px);
-				background-color: #999;
 			}
 			.news{
 				width: calc(65% - 45px);
@@ -68,24 +67,31 @@
 			.post{
 				display: block;
 				width: 100%;
-				min-width: 880px;
+				min-width: 360px;
+				max-width: 840px;
+				margin-bottom: 10px;
 				height: 220px;
 				background-color: #fff;
-				box-shadow: 1px 1px 0.1em #777;
+				box-shadow: 0px 0px 0.25em #777;
 				
+				border-radius: 10px;
 				}
 				.post img{
 					display: block;
 					float: left;
 					margin-right: 15px;
-					width: 440px;
+					width: 50%;
+					min-width: 180px;
+					max-width: 420px;
 					height: 220px;
-					background-color: transparent;
+					background-color: #999;
 				}
 				.post h2, .post h3{
 					display: block;
 					float: left;
-					width: 400px;
+					width: 50%;
+					min-width: 180px;
+					max-width: 420px;
 					font-family: 'Segoe UI';
 					font-weight: normal;
 				}
@@ -95,9 +101,11 @@
 				.post p{ 
 					display: block;
 					float: left;
-					width: 370px;
-					border: 1px solid #000;
+					width: calc(50% - 30px);
+					min-width: 180px;
+					max-width: 420px;
 					font-family: 'Segoe UI';
+					overflow: hidden;
 					text-align: justify;
 				}
 		</style>
@@ -108,13 +116,17 @@
 
 			<div class="post">
 				<img src="#">
-				<h2>Titulo</h2>
-				<h3>Subtitulo</h3>
+				<div class="sep_post">
+					<h2>Titulo</h2>
+					<h3>Subtitulo</h3>
 
-				<p>Descricao:TextoTextoTextoTextoTextoTextoTexto
-				TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
-				TextoTextoTextoTextoTextoTextoTextoTextoTexto.
-				</p>
+					<p>Descricao:TextoTextoTextoTextoTextoTextoTexto
+					TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
+					TextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
+					TextoTextoTextoTextoTextoTextoTextoTextoTextoTexto
+					TextoTextoTextoTextoTextoTextoTextoTextoTexto.
+					</p>
+				</div>
 			</div>
 		</div>
 
