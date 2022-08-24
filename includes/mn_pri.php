@@ -14,8 +14,10 @@
         <div id="bar_selection"></div>
     </div>
     <div id="it_perfil">
-        <h2>Bem vindo, usuario</h2>
-        <img src="https://th.bing.com/th/id/R.cb5d8602f06e9de8d161050f238c32a2?rik=ZW4aMUxzXnKF9A&pid=ImgRaw&r=0">
+        <h2>Bem vindo, Pikachu</h2>
+        <a href="perfil.php">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLTC0WZ_NhOU0cGxMrIlEug-0nbCbOQBgUA1-TCb=s900-c-k-c0x00ffffff-no-rj">
+        </a>
         <button><img src="../img/icn_msg.png"></button>
     </div>
 </div>

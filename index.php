@@ -20,13 +20,34 @@
     <!-- //TOP BAR -->
     <!-- CENTER -->
     <div class = "containerCss">
-        <div class="childCssOne">hello</div>
-        <div class="childCssTwo"><a href="views/home.php">Fazer login</a></div>
+        <div class="childCssOne">
+
+        </div>
+        <div class="childCssTwo">
+
+        </div>
+        <a href="views/home.php">Fazer login</a>
     </div>
     <!-- //CENTER -->
     <!-- FOOTER -->
     <div class = "footerCss">
-
+        <div class="leftFooterCss">
+            <h3 class="tituloUF">UNIVERSIDADE FEDERAL DE ALAGOAS</h3>
+        </div>
+        <div class="rightFooterCss">
+            <div class="itemFooter">
+                <h4>Endereço:</h4>
+                <p>Av. Lorival Melo Mota, Tabuleiro dos Martins,<br>Maceió-AL, CEP: 57072-900</p>
+            </div>
+            <div class="itemFooter">
+                <h4>E-mail:</h4>
+                <p>secretaria@ic.ufal.br</p>
+            </div>
+            <div class="itemFooter">
+                <h4>Telefone:</h4>
+                <p>(82) 3214-1401</p>
+            </div>
+        </div>
     </div>
     <!-- //FOOTER -->
 </body>
