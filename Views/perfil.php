@@ -6,8 +6,13 @@
 ?>
 
 	<!-- CENTER -->
-    <div>
-        
+    <div class="breadcrumbs">
+        <img src="" alt="">icon
+        <div class="links">
+            <a href=""><b>Plataforma</b></a>
+            /
+            <a href=""><b>Perfil</b></a>
+        </div>
     </div>
     <!-- //CENTER -->
 

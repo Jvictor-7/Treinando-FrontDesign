@@ -42,6 +42,21 @@ body {
 }
 /* //TOP BAR */
 
+/* BREADCRUMBS */
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    gap: 5px;
+    width: 100%;
+    height: 60px;
+}
+.links>a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+/* //BREADCRUMBS */
 /* CENTER */
 .containerCss {
     display: flex;

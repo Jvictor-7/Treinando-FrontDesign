@@ -2,7 +2,7 @@
 <div id="mn_pri">
     <div id="search_bar">
         <input type="text" value="O que você Procura?" name="pesquisa">
-        <button><img src="../img/icn_search.png"></button>
+        <button><img id="icn_search" src="../img/icn_search.png"></button>
     </div>
     <div id="it_options">
         <ul>
