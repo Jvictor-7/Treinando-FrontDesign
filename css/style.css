@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 10vh;
     width: 100%;
     color: #fff;
 }
@@ -59,27 +59,71 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 450px;
+    width: 130%;
+    height: 600px;
     background-color: var(--tertiary-color);
     border-radius: 20px;
 }
 .childCssTwo{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 450px;
+    height: 600px;
     background-color: var(--login-color);
     border-radius: 20px;
 }
+/* LOGIN  */
+.cardTop{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+.cardTop>p {
+    color: rgb(110, 110, 110);
+}
+.imagemDefault {
+    border-radius: 50px;
+    width: 100px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+.cardFooter>input {
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    border: 0px;
+    box-shadow: 1px 1px 5px #ccc;
+}
+/* // LOGIN */
 /* //CENTER */
 /* FOOTER */
 .footerCss {
     display: flex;
     background-color: var(--quartiary-color);
+    justify-content: space-between;
+    align-items: center;
     color: #fff;
-    height: 60px;
+    padding: 35px;
+    height: 10vh;
     width: 100%;
+}
+
+.rightFooterCss{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.itemFooter {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.itemFooter>p{
+    font-size: 13px;
 }
 /* //FOOTER */
