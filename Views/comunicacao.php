@@ -33,7 +33,28 @@
 				height: 100vh;
 				margin: 0 auto;
 			}
+			#div_title_pag{
+				display: block;
+				width: calc(100% - 80px);
+				margin: 30px  40px;
+				}
+				#title_pag{
+					font-family: 'segoe ui';
+					font-size: 32px;
+				}
+				#subtitle_pag{
+					font-family: 'segoe ui';
+					font-size: 18px;
+					font-weight: normal;
+				}
+
 		</style>
+
+		<div id="div_title_pag">
+			<h1 id="title_pag">Painel de informações</h1>
+			<h2 id="subtitle_pag">Avisos institucionais e mensagens</h2>
+		</div>
+
     </div>
     <!-- //CENTER -->
 
