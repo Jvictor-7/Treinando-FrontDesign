@@ -80,6 +80,16 @@
         margin-left: 55px;
         background-color: #142748;
         border-radius: 5px;
+        animation: go-back 2.5s infinite alternate;
+    }
+
+    @keyframes go-back {
+        from {
+          transform: translateX(400px);
+        }
+        to {
+          transform: translateX(0);
+        }
     }
 
 #it_perfil{
