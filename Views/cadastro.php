@@ -56,6 +56,19 @@
 			<h2 id="subtitle_pag">Dados e estatísticas gerais</h2>
 		</div>
 
+		<div>
+			</br></br>
+			<a href="?x=57">lista de usuarios</a>
+			</br></br>
+			<a href="">lista de campi</a>
+			</br></br>
+			<a href="">lista de Institutos</a>
+			</br></br>
+			<a href="">lista de Disciplinas</a>
+			</br></br>
+			<a href="">lista de Processos seletivos</a>
+		</div>
+
     </div>
     <!-- //CENTER -->
 
