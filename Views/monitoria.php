@@ -55,6 +55,14 @@
 			<h1 id="title_pag">Gestão dos monitores</h1>
 			<h2 id="subtitle_pag">Dados e estatísticas gerais</h2>
 		</div>
+
+		<div>
+			</br></br>
+			<a href="?x=57">lista de monitores</a>
+			</br></br>
+			<a href="">lista de certificados</a>
+		</div>
+
     </div>
     <!-- //CENTER -->
 
