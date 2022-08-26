@@ -18,10 +18,10 @@
 					margin: 30px  40px;
 				}
 				.name a{
-				color: #142748;
-				font-family: 'segoe ui'; 
-				font-size: 16px;
-				text-decoration: none;
+					color: #142748;
+					font-family: 'segoe ui'; 
+					font-size: 16px;
+					text-decoration: none;
 				}
 			</style>
 
