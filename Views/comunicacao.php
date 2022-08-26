@@ -55,6 +55,12 @@
 			<h2 id="subtitle_pag">Avisos institucionais e mensagens</h2>
 		</div>
 
+		<div>
+			</br></br>
+			<a href="?x=57">lista de noticias</a>
+			</br></br>
+			<a href="">lista de notificacoes e mensagens</a>
+		</div>
     </div>
     <!-- //CENTER -->
 
