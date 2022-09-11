@@ -58,15 +58,15 @@
 
 		<div>
 			</br></br>
-			<a href="?x=57">lista de usuarios</a>
+			<a href="cadastro/list_users.php?x=57">lista de usuarios</a>
 			</br></br>
-			<a href="">lista de campi</a>
+			<a href="cadastro/list_campi.php">lista de campi</a>
 			</br></br>
-			<a href="">lista de Institutos</a>
+			<a href="cadastro/list_institutos.php">lista de Institutos</a>
 			</br></br>
-			<a href="">lista de Disciplinas</a>
+			<a href="cadastro/list_disciplinas.php">lista de Disciplinas</a>
 			</br></br>
-			<a href="">lista de Processos seletivos</a>
+			<a href="cadastro/list_processos.php">lista de Processos seletivos</a>
 		</div>
 
     </div>
