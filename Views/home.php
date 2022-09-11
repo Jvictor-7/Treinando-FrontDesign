@@ -161,6 +161,32 @@
 					background-color: rgba(0, 0, 0, 0.15);
 				}
 		
+		@media only screen and (max-width: 1365px){
+			/*aplica o container 1024*/ 
+
+			.container{
+				width: 1024px;
+			}
+		}
+
+		@media only screen and (max-width: 1024px){
+			/*aplica o container 640*/ 
+
+			.container{
+				width: 640px;
+			}
+		}
+
+		@media only screen and (max-width: 640px){
+			/*aplica o container 360*/ 
+
+			.container{
+				width: 360px;
+			}
+			.notifications{
+				display: none;
+			}
+		}
 		</style>
 
 		<div class="news">
