@@ -178,7 +178,7 @@
         height: 45px;
         float: left;
         margin-top: 15px;
-        margin-left: 15px;
+        margin-left: 10px;
         background-color: transparent;
         border-radius: 50px;
         cursor: pointer;
@@ -195,7 +195,7 @@
         display: block;
         float: left;
         margin-top: 20px;
-        margin-left: 15px;
+        margin-left: 7.5px;
         font-size: 22px;
         font-family: 'segoe ui';
         font-weight: normal;
@@ -210,6 +210,7 @@
         display: block;
         width: 300px;
         margin-left: 0;
+        margin-right: 10px;
         }
         #search_bar input[type="text"]{
             display: block;
