@@ -4,10 +4,6 @@
 
 	include('../includes/mn_pri.php');
 ?>
-	
-	
-
-
 	<!-- CENTER -->
 	<div class="container">
 		<div class="name">
@@ -16,6 +12,7 @@
 					display: block;
 					width: calc(100% - 80px);
 					margin: 30px  40px;
+					/*border: solid #000 0.01px;*/
 				}
 				.name a{
 					color: #142748;
@@ -23,23 +20,29 @@
 					font-size: 16px;
 					text-decoration: none;
 				}
+				@media only screen and (max-width: 1024px){
+					.name{
+						display: block;
+						width: calc(100% - 40px);
+						margin: 20px  20px;
+					}
+				}
 			</style>
 
 			<a href="../">Plataforma</a><a href=""> / Home</a>
-
 		</div>
 		
 		<style type="text/css">
 			.container{
 				display: block;
-				width: 1280px;
+				width: 1366px;
 				height: 100vh;
 				margin: 0 auto;
+				/*border: solid 1px #000;*/
 			}
 			.notifications, .news{
 				display: block;
 				float: left;
-				height: calc(100vh - 225px);
 				}
 				.notifications h1, .news h1{
 					display: block;
@@ -68,7 +71,6 @@
 				width: calc(65% - 45px);
 				margin-left: 40px;
 				margin-right: 5px;
-				cursor: pointer;
 				} 
 				.post_news{
 					display: block;
@@ -161,33 +163,159 @@
 					background-color: rgba(0, 0, 0, 0.15);
 				}
 		
-		@media only screen and (max-width: 1365px){
-			/*aplica o container 1024*/ 
+			@media only screen and (max-width: 1365px){
+				/*aplica o container 1024*/ 
 
-			.container{
-				width: 1024px;
+				.container{
+					width: 1024px;
+				}
+				.post_notif img{
+					width: 50px;
+					height: 50px;
+					margin-right: 15px;
+				}
+				.notif_title{
+					height: 10px;
+					margin-top: 10px;
+				}
+				.notif_subtitle{
+					width: 200px;
+					height: 15px;
+					margin-top: 5px;
+				}
 			}
-		}
 
-		@media only screen and (max-width: 1024px){
-			/*aplica o container 640*/ 
+			@media only screen and (max-width: 1024px){
+				/*aplica o container 640*/ 
 
-			.container{
-				width: 640px;
+				.container{
+					width: 640px;
+				}
+
+				.notifications h1, .news h1, .borda{
+					display: none;
+				}
+				.news{
+					display: block;
+					width: calc(100% - 40px);
+					margin-left: 20px;
+					/*border: solid 1px #000;*/
+				}
+				.notifications{
+					display: none;
+					width: calc(100% - 40px);
+					margin-left: 20px;
+					border: solid 1px #000;
+				}
+
+				.post_news{
+					width: calc(100% - 0px);
+					margin-bottom: 10px;
+					height: 220px;
+					}
+					.thumb{
+						width: 50%;
+						height: 220px;
+					}
+
+					.sep_post_news{
+						width: calc(50%);
+						height: 220px;
+						padding: 20px;
+					}
 			}
-		}
 
-		@media only screen and (max-width: 640px){
-			/*aplica o container 360*/ 
+			@media only screen and (max-width: 640px){
+				/*aplica o container 360*/ 
 
-			.container{
-				width: 360px;
+				.container{
+					width: 360px;
+				}
+
+				.news{
+					display: block;
+					width: calc(100% - 0px);
+					margin-left: 0px;
+					border-radius: 0px;
+				}
+
+				.post_news{
+					height: 175px;
+					}
+					.thumb{
+						width: 50%;
+						height: 175px;
+					}
+
+					.sep_post_news{
+						height: 175px;
+						padding: 5px;
+						}
+						.post_news h2{
+							margin: 6.5px 15px 0px 15px;
+							font-size: 18px;
+						}
+						.post_news h3{
+							margin: 0px 15px 15px 15px;
+							font-size: 12px;
+						}
+						
+						.post_news p{ 
+							display: block;
+							width: calc(100% - 40px);
+							min-height: 95px;
+							max-height: 95px;
+							padding-bottom: 6px;
+							margin: 6.5px 15px 5px 15px;
+							text-align: justify;
+							font-family: segoe ui;
+							font-size: 10px;
+						}
 			}
-			.notifications{
-				display: none;
-			}
-		}
 		</style>
+
+		<ul id="mn_home_mobile">
+			<style type="text/css">
+				#mn_home_mobile{display: none;}
+
+				@media only screen and (max-width: 1024px){
+					#mn_home_mobile{
+						display: block;
+						width: 100%;
+						height: 50px;
+						margin-bottom: 15px;
+						/*border: solid #000 0.01px;*/
+						}
+						#mn_home_mobile li{
+							display: block;
+							float: left;
+							margin: 7px 0px 7px 20px;
+							list-style: none;
+							border-radius: 30px;
+							background-color: rgba(0, 0, 0, 0.05);
+						}
+						#mn_home_mobile li a{
+							display: block;
+							color: #fff;
+							width: 125px;
+							height: 30px;
+							text-decoration: none;
+							font-family: segoe ui;
+							font-size: 16px;
+							text-align: center;
+							margin-top: 4px;
+						}
+				}
+				@media only screen and (max-width: 640px){
+					#mn_home_mobile li{margin: 7px 0px 7px 20px;}
+				}
+
+
+			</style>
+
+			<li style="background-color:#142748;"><a href="?viewHome=news" id="btn_news">Notícias</a></li>
+			<li><a style="color: #142748;" href="?viewHome=notify" id="btn_notify">Notificações</a></li>
+		</ul>
 
 		<div class="news">
 			<h1>Notícias</h1>
@@ -202,8 +330,7 @@
 
 						<p>
 							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto  
+							Texto Texto Texto Texto Texto 
 						</p>
 					</div>
 				</li>
@@ -216,8 +343,7 @@
 
 						<p>
 							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto  
+							Texto Texto Texto Texto Texto   
 						</p>
 					</div>
 				</li>
@@ -230,8 +356,7 @@
 
 						<p>
 							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto  
+							Texto Texto Texto Texto Texto 
 						</p>
 					</div>
 				</li>
@@ -244,8 +369,7 @@
 
 						<p>
 							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto Texto 
-							Texto Texto Texto Texto Texto Texto  
+							Texto Texto Texto Texto Texto  
 						</p>
 					</div>
 				</li>
