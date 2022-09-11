@@ -58,9 +58,9 @@
 
 		<div>
 			</br></br>
-			<a href="?x=57">lista de monitores</a>
+			<a href="monitoria/list_monitores.php?x=57">lista de monitores</a>
 			</br></br>
-			<a href="">lista de certificados</a>
+			<a href="monitoria/list_certificados.php">lista de certificados</a>
 		</div>
 
     </div>
