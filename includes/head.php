@@ -11,4 +11,4 @@
     <link rel="stylesheet" href="../css/mnbar.css">
 </head>
 
-<body>
+<body onmouseover="views_ban_home()" onload="views_ban_home()">
