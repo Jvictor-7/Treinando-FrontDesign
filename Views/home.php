@@ -40,11 +40,11 @@
 				margin: 0 auto;
 				/*border: solid 1px #000;*/
 			}
-			.notifications, .news{
+			#notifications, #news{
 				display: block;
 				float: left;
 				}
-				.notifications h1, .news h1{
+				#notifications h1, #news h1{
 					display: block;
 					width: 100%;
 					font-size: 22px;
@@ -52,7 +52,7 @@
 					font-weight: normal;
 				}
 				
-				.notifications{
+				#notifications{
 					width: calc(35% - 45px);
 					margin-left: 5px;
 					margin-right: 40px;
@@ -67,7 +67,7 @@
 					border-radius: 2px;
 				}
 
-			.news{
+			#news{
 				width: calc(65% - 45px);
 				margin-left: 40px;
 				margin-right: 5px;
@@ -192,12 +192,12 @@
 					width: 640px;
 				}
 
-				.notifications h1, .news h1, .borda{
+				#notifications h1, #news h1, .borda{
 					display: none;
 				}
 
-				.news{
-					display: none;
+				#news{
+					display: block;
 					width: calc(100% - 40px);
 					margin-left: 20px;
 					/*border: solid 1px #000;*/
@@ -218,8 +218,8 @@
 							padding: 20px;
 						}
 
-				.notifications{
-					display: block;
+				#notifications{
+					display: none;
 					width: calc(100% - 40px);
 					margin-left: 20px;
 					/*border: solid 1px #000;*/
@@ -241,7 +241,7 @@
 					width: 360px;
 				}
 
-				.news{
+				#news{
 					width: calc(100% - 0px);
 					margin-left: 0px;
 					border-radius: 0px;
@@ -306,33 +306,31 @@
 							float: left;
 							margin: 7px 0px 7px 20px;
 							list-style: none;
-							border-radius: 30px;
-							background-color: rgba(0, 0, 0, 0.05);
 						}
 						#mn_home_mobile li a{
 							display: block;
-							color: #fff;
+							color: #142748;
 							width: 125px;
-							height: 30px;
+							height: 35px;
+							border-radius: 30px;
 							text-decoration: none;
 							font-family: segoe ui;
 							font-size: 16px;
 							text-align: center;
-							margin-top: 4px;
+							padding: 4px 0;
+							background-color: rgba(0, 0, 0, 0.05);
 						}
 				}
 				@media only screen and (max-width: 640px){
 					#mn_home_mobile li{margin: 7px 0px 7px 20px;}
 				}
-
-
 			</style>
 
-			<li style="background-color:#142748;"><a href="?viewHome=news" id="btn_news">Notícias</a></li>
-			<li><a style="color: #142748;" href="?viewHome=notify" id="btn_notify">Notificações</a></li>
+			<li ><a id="btn_news" href="?viewHome=news">Notícias</a></li>
+			<li ><a id="btn_notify" href="?viewHome=notify">Notificações</a></li>
 		</ul>
 
-		<div class="news">
+		<div id="news">
 			<h1>Notícias</h1>
 			<div class="borda"></div>
 			
@@ -393,7 +391,7 @@
 			</ul>
 		</div>
 
-		<div class="notifications">
+		<div id="notifications">
 			<h1>Notíficações</h1>
 			<div class="borda"></div>
 
@@ -432,7 +430,60 @@
 		</div>
 	</div>
 
-	
+	<script type="text/javascript">
+		function views_ban_home(){
+			//Resgatando variavel da URL
+			const url_string = window.location; 
+			var url = new URL(url_string);
+			var viewHome = url.searchParams.get("viewHome");
+			// Ban_div
+			const btn_news = document.getElementById("btn_news");
+			const btn_notify = document.getElementById("btn_notify");
+			const news = document.getElementById("news");
+			const notifications = document.getElementById("notifications");
+
+			var largura_tela = window.innerWidth;
+
+			console.log(largura_tela);
+
+			if (largura_tela > 1024) {
+				news.style.display = "block";
+				notifications.style.display = "block";
+			}
+			else if(largura_tela < 1024){
+
+				if (viewHome == "news") {
+
+					news.style.display = "block";
+					btn_news.style = "display:block; background:#142748; color:#fff";
+
+					notifications.style.display = "none";
+					btn_notify.style = "display:block; background: rgba(0, 0, 0, 0.05); color:#142748";
+				}
+				else if(viewHome == "notify") {
+					news.style.display = "none";
+					btn_news.style = "display:block; background: rgba(0, 0, 0, 0.05); color:#142748";
+
+					notifications.style.display = "block";
+					btn_notify.style = "display:block; background:#142748; color:#fff";
+				}
+				else if(viewHome == undefined){
+					news.style.display = "block";
+					btn_news.style = "display:block; background:#142748; color:#fff";
+
+					notifications.style.display = "none";
+					btn_notify.style = "display:block; background: rgba(0, 0, 0, 0.05); color:#142748";
+				}
+			}
+			else{}
+
+
+
+			// Quando usamos essa funcao e expandimos a tela gera um bug
+			// viewPag,  = para monitorar as variaveis
+			// Armazenar viewResolution em consolelog e atualizar frequentemente (onmousemove)
+		}
+	</script>
 	
     <!-- //CENTER -->
 
