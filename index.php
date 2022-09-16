@@ -24,9 +24,9 @@
 
         </div>
         <div class="childCssTwo">
-
+            <a href="views/home.php">Fazer login</a>
         </div>
-        <a href="views/home.php">Fazer login</a>
+        
     </div>
     <!-- //CENTER -->
     <!-- FOOTER -->
