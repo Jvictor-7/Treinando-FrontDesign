@@ -5,7 +5,7 @@
 
 	<!-- CENTER -->
     <div class="breadcrumbs">
-        <img src="../img/icn_back.png" alt="" width=30>
+        <a href="../views/home.php"><img src="../img/icn_back.png" alt="" width=30></a>
         <div class="links">
             <a href=""><b>Plataforma</b></a>
             /
