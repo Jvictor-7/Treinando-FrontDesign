@@ -238,4 +238,244 @@
         }
         #search_bar button{border-radius: 50px;} 
 
+}/* Autores: Jhonata H. e João Victor */
+
+/*@media only screen and (max-width: 1366px) {*/
+
+#container_mn_pri{
+    display: block;
+    width: 100%;
+    height: 75px;
+    box-shadow: 1px 1px 0.3em #777;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#mn_pri{
+    display: block;
+    width: 1366px;
+    height: 75px;
+    margin: 0 auto;
+}
+
+#icn_mn_sidebar, #title_section{
+    display: none;
+}
+
+#search_bar{
+    display: block;
+    width: 360px;
+    height: 45px;
+    border-radius: 50px;
+    margin-left: 25px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0, 0.075);
+    float: left;
+    }
+    #search_bar input[type="text"]{
+        display: block;
+        float: left;
+        border: none;
+        width: 315px;
+        height: 45px;
+        border-radius: 50px 0 0 50px;
+        color: rgba(0, 0, 0, 0.25);
+        font-family: 'segoe ui';
+        font-weight: bold;
+        background-color: transparent;
+        padding-left: 25px;
+    }
+    #search_bar button{
+        display: block;
+        float: left;
+        border: none;
+        background-color: transparent;
+        width: 45px;
+        height: 45px;
+        border-radius: 0 50px 50px 0;
+        cursor: pointer;
+    }
+    #search_bar button:hover{
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+
+    #search_bar button img{
+        width: 20px;
+    }
+
+#it_options{
+    display: inline-block;
+    height: 75px;
+    position: relative;
+    }
+    #it_options ul{
+        display: flex;
+        width: 480px;
+        margin-top: 20px;
+    }
+    #it_options li{
+        display: flex;
+        flex-direction: row;
+        margin-left: 40px;
+    }
+    #it_options a{
+        display: block;
+        font-family: 'segoe ui';
+        font-size: 18px;
+        color: #142748;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #bar_selection{
+        display: block;
+        width: 15px;
+        height: 5px;
+        margin-top: 5px;
+        margin-left: 55px;
+        background-color: #142748;
+        border-radius: 5px;
+        animation: go-back 2.5s infinite alternate;
+    }
+
+    @keyframes go-back {
+        from {
+          transform: translateX(400px);
+        }
+        to {
+          transform: translateX(0);
+        }
+    }
+
+#it_perfil{
+    display: block;
+    float: right;
+    /*width: 260px;*/
+    height: 75px;
+    /*border: 0.1px solid #000;*/
+    }
+    #it_perfil h2{
+        display: block;
+        float: left;
+        padding: 15px 0;
+        font-family: segoe ui;
+        font-size: 15px;
+        font-weight: normal;
+        /*border: 0.1px solid #000;*/
+    }
+    #it_perfil img, #it_perfil button{
+        display: inline;
+        float: right;
+        width: 45px;
+        height: 45px;
+        border-radius: 40px;
+        margin: 15px 0 0 15px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    #it_perfil button{
+        border: none;
+        margin-right: 15px;
+    }
+    #it_perfil button: hover{background-color: rgba(0, 0, 0, 0.075);}
+    #it_perfil button img{
+        display: block;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+@media only screen and (max-width: 1365px) {
+
+    /*aplica o container 1024*/ 
+
+    #mn_pri{
+        width: 1024px;
+    }
+
+    #search_bar{
+        display: block;
+        width: 45px;
+        }
+        #search_bar input[type="text"]{
+            display: none;
+        }
+        #search_bar button{border-radius: 50px;}     
+     #it_perfil h2{display: none;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /*aplica o container 640*/ 
+
+    #mn_pri{
+        width: 640px;
+    }
+
+    #icn_mn_sidebar{
+        display: block;
+        width: 45px;
+        height: 45px;
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+        background-color: transparent;
+        border-radius: 50px;
+        cursor: pointer;
+        border: none;
+        }
+        #icn_mn_sidebar img{
+            height: 25px;
+        }
+        #icn_mn_sidebar:hover{
+            background-color: rgba(0, 0, 0, 0.075);
+        }
+
+    #title_section{
+        display: block;
+        float: left;
+        margin-top: 20px;
+        margin-left: 7.5px;
+        font-size: 22px;
+        font-family: 'segoe ui';
+        font-weight: normal;
+        color: #142748;
+    }
+
+    #search_bar, #it_perfil{
+        float: right;
+    }
+
+     #search_bar{
+        display: block;
+        width: 300px;
+        margin-left: 0;
+        margin-right: 10px;
+        }
+        #search_bar input[type="text"]{
+            display: block;
+            width: 255px;
+        }
+        #search_bar button{border-radius: 0 50px 50px 0;}
+
+    #it_options, #it_perfil img{display:none;}
+}
+
+@media only screen and (max-width: 640px) {
+
+    /*aplica o container 360*/ 
+
+    #mn_pri{
+        width: 360px;
+    }
+
+    #search_bar{
+        display: block;
+        width: 45px;
+        }
+        #search_bar input[type="text"]{
+            display: none;
+        }
+        #search_bar button{border-radius: 50px;} 
+
 }
