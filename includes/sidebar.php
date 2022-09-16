@@ -2,8 +2,6 @@
 <div id="sidebar" onmouseleave="mn_sidebar_close()">
 
     <script type="text/javascript">
-        document.getElementById("icn_mn_sidebar").addEventListener("click", mn_sidebar);
-
         function mn_sidebar() {
           document.getElementById("sidebar").style.display = "block";
         }
@@ -57,6 +55,7 @@
                 font-size: 14px;
             }
             #it_perfil_sidebar h2{
+                margin-top: -10px;
                 font-size: 12px;
                 color: rgba(255, 255, 255, 0.65);
             }
@@ -79,7 +78,6 @@
             font-family: segoe ui;
             color: #fff;
         }
-
     </style>
 
     <div id="ban_perfil">
@@ -91,32 +89,32 @@
     </div>
 
     <ul id="mn_pri_sidebar">
-        <li><a href="">Home</a></li>
-        <li><a href="">Cadastro</a></li>
-        <li><a href="">Comunicação</a></li>
-        <li><a href="">Monitoria</a></li>
+        <li><a href="home.php">Home</a></li>
+        <li><a href="cadastro.php">Cadastro</a></li>
+        <li><a href="comunicacao.php">Comunicação</a></li>
+        <li><a href="monitoria.php">Monitoria</a></li>
     </ul>
 
     <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">button</button>
 
     <div id="Demo1" class="w3-hide">
-      <a class="w3-button w3-block w3-left-align" href="#">Link 1</a>
-      <a class="w3-button w3-block w3-left-align" href="#">Link 2</a>
-      <a class="w3-button w3-block w3-left-align" href="#">Link 3</a>
-    </div>
+        <a class="w3-button w3-block w3-left-align" href="#">Link 1</a>
+        <a class="w3-button w3-block w3-left-align" href="#">Link 2</a>
+        <a class="w3-button w3-block w3-left-align" href="#">Link 3</a>
 
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        </script>
     </div>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script>
-    function myFunction(id) {
-      var x = document.getElementById(id);
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
+    
 
 </div>
 <!-- //MENU PRINCIPAL -->
